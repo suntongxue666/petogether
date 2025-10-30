@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: petogether-callback-backend
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: CALLBACK_SECRET
+        value: 73bceb1e1e3fe217e0bf09aa76e1dfe6
+      - key: NODE_ENV
+        value: production
